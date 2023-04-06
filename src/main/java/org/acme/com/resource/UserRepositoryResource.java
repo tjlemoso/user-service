@@ -51,6 +51,16 @@ public class UserRepositoryResource {
         return entity;
     }
 
+    @GET
+    @Path("{name}")
+    public User getSingleByName(String name) {
+      User entity = userRepository.findByName(name);
+        if (entity == null) {
+            throw new WebApplicationException("User with id of " + name + " does not exist.", 404);
+        }        
+        return entity;
+    }
+
     @POST
     @Transactional
     public Response create(User user) {
