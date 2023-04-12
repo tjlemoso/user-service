@@ -56,10 +56,10 @@
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-mysql</artifactId>
     </dependency>    
-    <dependency>
+    <!-- <dependency>
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jdbc-postgres</artifactId>
-    </dependency>       
+    </dependency>        -->
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
