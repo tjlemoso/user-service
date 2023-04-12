@@ -1,0 +1,2 @@
+criar pacote - mvn clean package
+deploy - gcloud app deploy target/user-service-1.0.0-runner.jar
